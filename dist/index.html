@@ -65,28 +65,28 @@
     <!-- Sidebar -->
     <aside class="sidebar">
         <div class="sidebar__header">
-            <img src="../assets/images/sidebar-header.jpg" alt="">
+            <img src="../assets/images/sidebar/sidebar-header.jpg" alt="">
         </div>
     
         <div class="sidebar__content">
             <div class="profile">
-                <img class="profile__pfp" src="../assets/images/sidebar-pfp.png" alt="">
+                <img class="profile__pfp" src="../assets/images/sidebar/sidebar-pfp.png" alt="">
                 <div class="profile__name">Андрей Бурмистров</div>
                 <div class="profile__job">блог frontend разработчика</div>
                 <ul class="social">
                     <li class="li social__item">
                         <a href="#" class="social__link" target="_blank">
-                            <img src="../assets/images/instagram-sidebar.svg" alt="instagram">
+                            <img src="../assets/images/sidebar/instagram-sidebar.svg" alt="instagram">
                         </a>
                     </li>
                     <li class="li social__item">
                         <a href="#" class="social__link" target="_blank">
-                            <img src="../assets/images/vk-sidebar.svg" alt="VK">
+                            <img src="../assets/images/sidebar/vk-sidebar.svg" alt="VK">
                         </a>
                     </li>
                     <li class="li social__item">
                         <a href="#" class="social__link" target="_blank">
-                            <img src="../assets/images/pinterest-sidebar.svg" alt="pinterest">
+                            <img src="../assets/images/sidebar/pinterest-sidebar.svg" alt="pinterest">
                         </a>
                     </li>
                 </ul>
@@ -105,8 +105,52 @@
     <!-- Main -->
     <main class="main">
         <div class="container">
+            <!-- Stories -->
+            <div class="stories">
+                <div class="stories__item">
+                    <img class="stories__preview" src="assets/images/stories/stories-1-redacted.jpg" alt="">
+                    <div class="stories__title">
+                        Отдыхаю на природе
+                    </div>
+                    <time class="stories__date" datetime="2020-09-21">21.09.2020</time>
+                </div>
+                <div class="stories__item">
+                    <img class="stories__preview" src="assets/images/stories/stories-2-redacted.jpg" alt="">
+                    <div class="stories__title">
+                        Заканчиваю сложный проект
+                    </div>
+                    <time class="stories__date" datetime="2020-09-15">15.09.2020</time>
+                </div>
+                <div class="stories__item">
+                    <img class="stories__preview" src="assets/images/stories/stories-3.jpg" alt="">
+                    <div class="stories__title">
+                        Переехал в новую квартиру
+                    </div>
+                    <time class="stories__date" datetime="2020-09-11">11.09.2020</time>
+                </div>
+                <div class="stories__item">
+                    <img class="stories__preview" src="assets/images/stories/stories-4.jpg" alt="">
+                    <div class="stories__title">
+                        Осень пришла!
+                    </div>
+                    <time class="stories__date" datetime="2020-8-28">28.08.2020</time>
+                </div>
+            </div> <!-- /.stories -->
             
-            Hello!
+            <!-- Add post -->
+            <div class="add-post">
+                <form class="add-post__form" action="/" method="post">
+                    <textarea name="post-text" placeholder="Напишите что-нибудь" class="add-post__textarea"></textarea>
+                    <div class="add-post__form-actions">
+                        <label class="add-post__file" for="app-post-file">
+                            <input type="file" id="app-post-file">
+                        </label>
+                        <button class="add-post__send" type="submit">
+                            <img src="assets/images/add-post/send-arrow.svg" alt="Отправить">
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 </div>
