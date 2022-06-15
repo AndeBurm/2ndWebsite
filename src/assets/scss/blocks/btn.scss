@@ -17,14 +17,14 @@
 
   transition: background-color .2s linear;
 
-  &:hover {
+  &:hover, &:focus {
     text-decoration: none;
   }
 
   &--red {
     background-color: $red;
     box-shadow: 0 7px 17px -10px rgba($red, .2);
-    &:hover{
+    &:hover, &:focus {
       background-color: darken($red, 5%);
     }
   }
@@ -32,7 +32,7 @@
   &--blue {
     background-color: $blue;
     box-shadow: 0 7px 17px -10px rgba($blue, .2);
-    &:hover{
+    &:hover, &:focus {
       background-color: darken($blue, 5%);
     }
   }
