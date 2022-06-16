@@ -39,6 +39,8 @@
   }
 
   &--textarea {
+    height: 32px;
+    overflow: hidden;
     resize: none;
   }
 }
